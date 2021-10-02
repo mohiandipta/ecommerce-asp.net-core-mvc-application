@@ -31,13 +31,13 @@ namespace eTickets.Models
 
         // design has defined as [ Cinemas ---> Movies <--- Producers ]
 
-        // Cinema 
+        // Cinema // ForeignKey
         public int CinemaId { get; set; }
         [ForeignKey("CinemaId")]
         public Cinema Cinema { get; set; }
 
 
-        // Producer
+        // Producer // ForeignKey
         public int ProducerId { get; set; }
         [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
